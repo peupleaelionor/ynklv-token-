@@ -157,6 +157,29 @@ export function tierDefinition(tier: MembershipTier): TierDefinition {
   return TIER_LADDER[tier]
 }
 
+// ─── Token identity ──────────────────────────────────────────────────────────
+
+/** Canonical token identity — single source of truth across all packages. */
+export const TOKEN_INFO = {
+  /** On-chain ERC-20 name */
+  name: 'KLVCOIN',
+  /** On-chain ERC-20 symbol / brand name */
+  symbol: 'YNKLV',
+  decimals: 18,
+  /** Fixed total supply expressed as a decimal string in wei (18 dp). */
+  totalSupply: '1000000000000000000000000000',
+  network: 'Base',
+} as const
+
+// ─── Ecosystem identity ───────────────────────────────────────────────────────
+
+/** Top-level ecosystem branding constants. */
+export const ECOSYSTEM = {
+  name: 'Zamani',
+  foundation: 'Zamani Foundation',
+  tagline: 'Not a coin. A civilization.',
+} as const
+
 // ─── Token economics constants (informational; enforced on-chain) ─────────────
 
 export const TOKEN_CONSTANTS = {

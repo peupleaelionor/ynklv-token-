@@ -1,5 +1,22 @@
 import { MembershipTier } from '@ynklv/types'
 
+// ─── Token metadata (mirrors on-chain constants) ──────────────────────────────
+
+export interface TokenMetadata {
+  /** On-chain ERC-20 name */
+  name: string
+  /** On-chain ERC-20 symbol / brand name */
+  symbol: string
+  decimals: number
+  /** Fixed total supply in wei (18 decimal places) */
+  totalSupplyWei: string
+  network: string
+  chainId: number
+  mintable: false
+  /** Utility positioning — never investment language */
+  positioning: 'utility'
+}
+
 export interface MemberRecord {
   address: string
   tier: MembershipTier
@@ -68,6 +85,19 @@ class MemoryStore {
   creators: Map<string, CreatorRecord> = new Map()
   sales: SaleRecord[] = []
   contributions: ContributionRecord[] = []
+
+  /** Canonical token identity exposed via the /token/info endpoint. */
+  tokenMetadata: TokenMetadata = {
+    name: 'KLVCOIN',
+    symbol: 'YNKLV',
+    decimals: 18,
+    totalSupplyWei: '1000000000000000000000000000',
+    network: 'Base',
+    chainId: 8453,
+    mintable: false,
+    positioning: 'utility',
+  }
+
   treasury: TreasurySnapshot = {
     timestamp: new Date().toISOString(),
     totalValue: '4200000000000000000000000',
