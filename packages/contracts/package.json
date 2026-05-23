@@ -1,0 +1,21 @@
+{
+  "name": "@ynklv/contracts",
+  "version": "0.1.0",
+  "description": "YNKLV ecosystem smart contracts (OpenZeppelin v5, Foundry).",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "forge build",
+    "test": "forge test -vvv",
+    "test:gas": "forge test --gas-report",
+    "coverage": "forge coverage",
+    "fmt": "forge fmt",
+    "anvil": "anvil",
+    "deploy:base-sepolia": "forge script script/Deploy.s.sol:Deploy --rpc-url base_sepolia --broadcast --verify -vvvv",
+    "deploy:base": "forge script script/Deploy.s.sol:Deploy --rpc-url base --broadcast --verify -vvvv",
+    "verify": "forge verify-contract --chain base",
+    "typecheck": "echo \"@ynklv/contracts: solidity\"",
+    "lint": "forge fmt --check",
+    "clean": "forge clean"
+  }
+}

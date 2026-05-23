@@ -1,0 +1,22 @@
+{
+  "name": "@ynklv/token-gates",
+  "version": "0.1.0",
+  "description": "Token-gated access evaluation for the YNKLV ecosystem. Pure, isomorphic.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": { ".": "./src/index.ts" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit",
+    "test": "echo \"@ynklv/token-gates: tested via @ynklv/sdk\"",
+    "lint": "echo \"@ynklv/token-gates: no lint\"",
+    "clean": "rm -rf dist *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@ynklv/types": "workspace:*",
+    "@ynklv/config": "workspace:*"
+  },
+  "devDependencies": { "typescript": "^5.6.2" }
+}

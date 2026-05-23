@@ -1,0 +1,42 @@
+{
+  "name": "@ynklv/sdk",
+  "version": "0.1.0",
+  "description": "The YNKLV SDK — connect any app to the ecosystem: balances, membership, token-gating, rewards, identity.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./react": "./src/react.tsx",
+    "./server": "./src/server.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit",
+    "test": "echo \"@ynklv/sdk: see examples for integration tests\"",
+    "lint": "echo \"@ynklv/sdk: no lint\"",
+    "clean": "rm -rf dist *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@ynklv/types": "workspace:*",
+    "@ynklv/config": "workspace:*",
+    "@ynklv/token-gates": "workspace:*",
+    "@ynklv/api-client": "workspace:*",
+    "@ynklv/utils": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "viem": ">=2"
+  },
+  "peerDependenciesMeta": {
+    "react": { "optional": true },
+    "viem": { "optional": true }
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "react": "^18.3.0",
+    "typescript": "^5.6.2",
+    "viem": "^2.21.0"
+  }
+}

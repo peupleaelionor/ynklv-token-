@@ -1,0 +1,19 @@
+{
+  "name": "@ynklv/api-client",
+  "version": "0.1.0",
+  "description": "Typed client for the YNKLV backend API.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": { ".": "./src/index.ts" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit",
+    "test": "echo \"@ynklv/api-client: no tests\"",
+    "lint": "echo \"@ynklv/api-client: no lint\"",
+    "clean": "rm -rf dist *.tsbuildinfo"
+  },
+  "dependencies": { "@ynklv/types": "workspace:*" },
+  "devDependencies": { "typescript": "^5.6.2" }
+}
