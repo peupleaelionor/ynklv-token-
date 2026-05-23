@@ -2,7 +2,7 @@
   "name": "ynklv",
   "version": "0.1.0",
   "private": true,
-  "description": "YNKLV — the Afro-global digital asset ecosystem. Reusable Web3 infrastructure, token utility system, and multi-project integration SDK.",
+  "description": "YANKELV — the Afro-global digital asset ecosystem. Reusable Web3 infrastructure, token utility system, and multi-project integration SDK.",
   "license": "MIT",
   "packageManager": "pnpm@9.12.0",
   "engines": {

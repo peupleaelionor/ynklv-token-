@@ -69,7 +69,7 @@ export const SAMPLE_ACTIVITY = [
   { type: 'creation.publish', label: 'Published "Afrobeat Stems Vol.3"', timestamp: '2024-09-01T10:00:00Z', amount: null },
   { type: 'governance.vote', label: 'Voted on Proposal #14', timestamp: '2024-08-28T14:00:00Z', amount: null },
   { type: 'membership.upgrade', label: 'Upgraded from Builder → Creator', timestamp: '2024-08-01T00:00:00Z', amount: null },
-  { type: 'creation.sale', label: 'Sale — "Mboka Sounds EP"', timestamp: '2024-07-22T16:30:00Z', amount: '90000000000000000000' },
+  { type: 'creation.sale', label: 'Sale — "Mboka Sounds EP" (YANKELV)', timestamp: '2024-07-22T16:30:00Z', amount: '90000000000000000000' },
 ]
 
 export const SAMPLE_TREASURY = {

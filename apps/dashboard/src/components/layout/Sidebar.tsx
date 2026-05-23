@@ -30,7 +30,7 @@ export function Sidebar({ variant }: SidebarProps) {
   return (
     <aside className="w-56 shrink-0 border-r border-ynklv bg-ynklv-surface flex flex-col min-h-screen">
       <div className="px-6 py-6 border-b border-ynklv">
-        <span className="text-ynklv-cream font-light tracking-[0.2em] text-lg">YNKLV</span>
+        <span className="text-ynklv-cream font-light tracking-[0.2em] text-lg">YANKELV</span>
         {variant === 'admin' && (
           <span className="block text-[10px] uppercase tracking-widest text-ynklv-copper mt-0.5">Admin</span>
         )}

@@ -26,7 +26,7 @@ export default function UserOverviewPage() {
       <div className="grid grid-cols-4 gap-4">
         <StatCard
           label="Balance"
-          value={`${formatWei(SAMPLE_BALANCE.balanceWei)} YNKLV`}
+          value={`${formatWei(SAMPLE_BALANCE.balanceWei)} YANKELV`}
           sub="Ecosystem utility token"
           copper
         />
@@ -37,14 +37,14 @@ export default function UserOverviewPage() {
         />
         <StatCard
           label="Pending rewards"
-          value={`${formatWei(SAMPLE_REWARDS.pendingTotal)} YNKLV`}
+          value={`${formatWei(SAMPLE_REWARDS.pendingTotal)} YANKELV`}
           sub="Participation credits"
           accent
           copper
         />
         <StatCard
           label="Claimed total"
-          value={`${formatWei(SAMPLE_REWARDS.claimedTotal)} YNKLV`}
+          value={`${formatWei(SAMPLE_REWARDS.claimedTotal)} YANKELV`}
           sub="All epochs"
         />
       </div>
@@ -86,7 +86,7 @@ export default function UserOverviewPage() {
                   <p className="text-xs text-ynklv-muted">{formatRelative(a.timestamp)}</p>
                 </div>
                 {a.amount && (
-                  <span className="text-sm text-ynklv-copper">+{formatWei(a.amount)} YNKLV</span>
+                  <span className="text-sm text-ynklv-copper">+{formatWei(a.amount)} YANKELV</span>
                 )}
               </div>
             ))}

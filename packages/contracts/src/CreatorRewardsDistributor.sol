@@ -8,7 +8,7 @@ import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.s
 import { IYNKLV } from "./interfaces/IYNKLV.sol";
 
 /// @title CreatorRewardsDistributor
-/// @author YNKLV
+/// @author YANKELV
 /// @notice Settles a Soko purchase by splitting the payment immutably:
 ///         90% to the creator, 8.5% to the Baraka treasury, 1.5% burned.
 ///         The split is hardcoded as constants and cannot be changed without

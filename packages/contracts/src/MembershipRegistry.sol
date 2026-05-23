@@ -6,7 +6,7 @@ import { Pausable } from "@openzeppelin/contracts/utils/Pausable.sol";
 import { IYNKLV } from "./interfaces/IYNKLV.sol";
 
 /// @title MembershipRegistry
-/// @author YNKLV
+/// @author YANKELV
 /// @notice Resolves a member's tier from their YNKLV balance and their
 ///         contribution score (EPS). Tiers describe ACCESS and PARTICIPATION
 ///         rights only — never financial return or yield.

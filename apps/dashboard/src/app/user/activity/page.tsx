@@ -20,7 +20,7 @@ export default function ActivityPage() {
               </div>
             </div>
             {a.amount && (
-              <span className="text-sm text-ynklv-copper">+{formatWei(a.amount)} YNKLV</span>
+              <span className="text-sm text-ynklv-copper">+{formatWei(a.amount)} YANKELV</span>
             )}
           </div>
         ))}

@@ -19,7 +19,7 @@ const passages = [
   },
   {
     id: 'p4',
-    text: 'YNKLV is not a crypto project. It is not a startup. It is the beginning of a decades-long digital institution — designed for permanence, engineered for trust, built from culture outward.',
+    text: 'YANKELV is not a crypto project. It is not a startup. It is the beginning of a decades-long digital institution — designed for permanence, engineered for trust, built from culture outward.',
   },
 ]
 
@@ -124,7 +124,7 @@ export function ManifestoSection() {
                   "Not a coin. A civilization."
                 </p>
                 <footer className="mt-4 t-label text-[var(--or)] tracking-[0.2em]">
-                  — THE YNKLV MANIFESTO
+                  — THE YANKELV MANIFESTO
                 </footer>
               </motion.blockquote>
 

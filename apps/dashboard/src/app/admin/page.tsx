@@ -24,7 +24,7 @@ export default function AdminOverviewPage() {
         <StatCard label="Total members" value={metrics.totalMembers.toLocaleString()} sub="Across all tiers" />
         <StatCard label="Active creators" value={metrics.activeCreators.toLocaleString()} sub="Studio marketplace" copper />
         <StatCard label="Total transactions" value={metrics.totalTransactions.toLocaleString()} sub="All-time" />
-        <StatCard label="Total burned" value={`${formatWei(metrics.totalBurned)} YNKLV`} sub="Deflationary burn" accent copper />
+        <StatCard label="Total burned" value={`${formatWei(metrics.totalBurned)} YANKELV`} sub="Deflationary burn" accent copper />
       </div>
 
       {/* Tier distribution */}
@@ -55,7 +55,7 @@ export default function AdminOverviewPage() {
         <div className="flex items-start justify-between mb-4">
           <div>
             <p className="text-xs uppercase tracking-widest text-ynklv-muted mb-1">Baraka treasury</p>
-            <p className="text-2xl font-light text-ynklv-cream">{formatWei(treasury.totalValue, 18, 0)} YNKLV</p>
+            <p className="text-2xl font-light text-ynklv-cream">{formatWei(treasury.totalValue, 18, 0)} YANKELV</p>
           </div>
           <span className="text-xs border border-green-700 text-green-400 rounded-full px-2 py-0.5">Healthy</span>
         </div>

@@ -18,15 +18,15 @@ const steps: { id: Step; label: string }[] = [
 const stepContent: Record<Step, { title: string; body: string }> = {
   welcome: {
     title: 'You are about to join a civilization.',
-    body:  'YNKLV is not a platform you sign up for. It is an ecosystem you enter — with intent, with contribution, with permanence. Take a moment. This is your genesis.',
+    body:  'YANKELV is not a platform you sign up for. It is an ecosystem you enter — with intent, with contribution, with permanence. Take a moment. This is your genesis.',
   },
   connect: {
     title: 'Connect your wallet.',
     body:  'Your wallet is your identity here. No email. No username. No password to forget. Cryptographic proof is your credential.',
   },
   qualify: {
-    title: 'Hold 100 YNKLV.',
-    body:  'The Pass is free to mint — but it requires skin in the game. 100 YNKLV. That is the only gate. No whitelist. No invitation list. No VIP access.',
+    title: 'Hold 100 YANKELV.',
+    body:  'The Pass is free to mint — but it requires skin in the game. 100 YANKELV. That is the only gate. No whitelist. No invitation list. No VIP access.',
   },
   mint: {
     title: 'Your Pass is being created.',
@@ -175,7 +175,7 @@ export function OnboardingFlow({ onComplete }: Props) {
               transition={t.fast}
             >
               {current === 'welcome'  ? 'Begin'
-               : current === 'qualify' ? 'I Hold 100 YNKLV'
+               : current === 'qualify' ? 'I Hold 100 YANKELV'
                : current === 'mint'    ? 'Mint My Pass'
                : 'Continue'}
             </motion.button>

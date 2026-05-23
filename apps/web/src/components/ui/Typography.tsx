@@ -79,10 +79,10 @@ export function Prose({ children, className = '' }: Props) {
   )
 }
 
-// ─── YNKLV wordmark — letter-by-letter reveal ────────────────────────────────
+// ─── YANKELV wordmark — letter-by-letter reveal ────────────────────────────────
 
 export function YNKLVWordmark({ className = '' }: { className?: string }) {
-  const letters = 'YNKLV'.split('')
+  const letters = 'YANKELV'.split('')
 
   return (
     <motion.span

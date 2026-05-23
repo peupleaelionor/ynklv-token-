@@ -1,0 +1,13 @@
+{
+  "name": "@ynklv/abi",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "echo 'ABIs are generated from forge build output'",
+    "typecheck": "echo 'no typecheck'",
+    "lint": "echo 'no linter'",
+    "test": "echo 'no tests'"
+  }
+}

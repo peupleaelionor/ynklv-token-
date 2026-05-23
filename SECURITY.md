@@ -8,7 +8,7 @@ disclosure, scope, and the operational security model.
 
 If you discover a vulnerability, **please do not open a public issue.**
 
-- Email: `security@ynklv.xyz` (PGP key published at `/.well-known/security.txt`).
+- Email: `security@yankelv.xyz` (PGP key published at `/.well-known/security.txt`).
 - Include: a description, reproduction steps, affected component, and impact.
 - We acknowledge within **48 hours** and aim to triage within **5 business days**.
 - Please allow a reasonable disclosure window before any public discussion.

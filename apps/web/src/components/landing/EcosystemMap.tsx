@@ -17,7 +17,7 @@ const nodes = [
   },
   {
     id:        'studio',
-    label:     'YNKLV Studio',
+    label:     'YANKELV Studio',
     sublabel:  'Creator Monetization',
     fill:      0.45,
     desc:      '90% of every sale goes directly to creators. Zero negotiation. Hardcoded in the smart contract. Enforced by mathematics, not promises.',
@@ -26,7 +26,7 @@ const nodes = [
   },
   {
     id:        'ai',
-    label:     'YNKLV AI',
+    label:     'YANKELV AI',
     sublabel:  'Afro-native Intelligence',
     fill:      0.3,
     desc:      'Eké Writer. Oro Visuals. Bassa Audio. AI tools trained on Afro-global creative tradition — not generic, not borrowed. Built from within.',

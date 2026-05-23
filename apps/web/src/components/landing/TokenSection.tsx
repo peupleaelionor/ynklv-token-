@@ -17,10 +17,10 @@ const allocations = [
 ]
 
 const burnMechanics = [
-  { trigger: 'AI Credit Use',      rate: '1 YNKLV per credit burned at execution' },
+  { trigger: 'AI Credit Use',      rate: '1 YANKELV per credit burned at execution' },
   { trigger: 'Token Transfers',    rate: '0.1% of each transfer permanently burned' },
-  { trigger: 'Pass Minting',       rate: '50 YNKLV burned per new Pass issued' },
-  { trigger: 'Governance Vote',    rate: '1 YNKLV per proposal submission (anti-spam)' },
+  { trigger: 'Pass Minting',       rate: '50 YANKELV burned per new Pass issued' },
+  { trigger: 'Governance Vote',    rate: '1 YANKELV per proposal submission (anti-spam)' },
 ]
 
 const antiSpeculative = [
@@ -52,7 +52,7 @@ export function TokenSection() {
         <div className="max-w-2xl mb-20">
           <SectionLabel className="mb-6">The Token</SectionLabel>
           <EditorialHeading className="text-fluid-2xl text-[var(--blanc)] mb-6">
-            One billion YNKLV. Fixed forever.
+            One billion YANKELV. Fixed forever.
           </EditorialHeading>
           <motion.p
             className="t-prose text-[var(--blanc-60)] leading-relaxed"
@@ -196,7 +196,7 @@ export function TokenSection() {
                 We are not a speculation vehicle.
               </h3>
               <p className="t-prose text-[var(--blanc-50)] text-sm leading-relaxed">
-                Every design decision in YNKLV is optimized for legitimacy, longevity, and
+                Every design decision in YANKELV is optimized for legitimacy, longevity, and
                 genuine utility — not short-term price movement.
               </p>
             </div>

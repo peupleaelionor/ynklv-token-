@@ -25,10 +25,11 @@ jobs:
           node-version: 20
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm lint
-      - run: pnpm typecheck
-      - run: pnpm test
-      - run: pnpm build
+        # Exclude @ynklv/contracts — Solidity tooling (forge) runs in the contracts job.
+      - run: pnpm turbo lint --filter=!@ynklv/contracts
+      - run: pnpm turbo typecheck --filter=!@ynklv/contracts
+      - run: pnpm turbo test --filter=!@ynklv/contracts
+      - run: pnpm turbo build --filter=!@ynklv/contracts
 
   # ── Solidity: Foundry tests + gas ──
   contracts:
@@ -39,6 +40,10 @@ jobs:
         with:
           submodules: recursive
       - uses: foundry-rs/foundry-toolchain@v1
+      - name: Configure git for forge install
+        run: |
+          git config --global user.email "ci@yankelv.xyz"
+          git config --global user.name "CI"
       - name: Install contract deps
         working-directory: packages/contracts
         run: forge install OpenZeppelin/openzeppelin-contracts foundry-rs/forge-std --no-commit
@@ -60,6 +65,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: foundry-rs/foundry-toolchain@v1
+      - name: Configure git for forge install
+        run: |
+          git config --global user.email "ci@yankelv.xyz"
+          git config --global user.name "CI"
       - name: Install contract deps
         working-directory: packages/contracts
         run: forge install OpenZeppelin/openzeppelin-contracts foundry-rs/forge-std --no-commit

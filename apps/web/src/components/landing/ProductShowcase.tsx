@@ -87,7 +87,7 @@ export function ProductShowcase() {
               whileInView="visible"
               viewport={viewport}
             >
-              The YNKLV Pass is a dynamic ERC-721 — a living credential that evolves as you
+              The YANKELV Pass is a dynamic ERC-721 — a living credential that evolves as you
               do. Five tiers. Infinite depths. One permanent record on-chain.
             </motion.p>
           </div>
@@ -142,7 +142,7 @@ export function ProductShowcase() {
         {/* ── Studio economics */}
         <div>
           <div className="max-w-2xl mb-16">
-            <SectionLabel className="mb-6">YNKLV Studio</SectionLabel>
+            <SectionLabel className="mb-6">YANKELV Studio</SectionLabel>
             <EditorialHeading className="text-fluid-2xl text-[var(--blanc)] mb-6">
               The creative economy, redesigned from first principles.
             </EditorialHeading>
@@ -153,7 +153,7 @@ export function ProductShowcase() {
               whileInView="visible"
               viewport={viewport}
             >
-              Audio. Visuals. Writing. Video. Access. Publish once. Earn in YNKLV.
+              Audio. Visuals. Writing. Video. Access. Publish once. Earn in YANKELV.
               The 90/8.5/1.5 split is not a policy — it is a mathematical invariant
               in the contract itself.
             </motion.p>
