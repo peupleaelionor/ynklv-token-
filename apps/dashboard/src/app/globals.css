@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ynklv-black: #0A0A0A;
+  --ynklv-cream: #F5F0E8;
+  --ynklv-copper: #C17D3C;
+  --ynklv-copper-dim: #8B5A2B;
+  --ynklv-surface: #141414;
+  --ynklv-border: #2A2A2A;
+}
+
+@layer base {
+  * { box-sizing: border-box; }
+  body {
+    background: var(--ynklv-black);
+    color: var(--ynklv-cream);
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: var(--ynklv-black); }
+  ::-webkit-scrollbar-thumb { background: var(--ynklv-border); border-radius: 2px; }
+}
+
+@layer utilities {
+  .bg-ynklv-black { background-color: var(--ynklv-black); }
+  .bg-ynklv-surface { background-color: var(--ynklv-surface); }
+  .text-ynklv-cream { color: var(--ynklv-cream); }
+  .text-ynklv-copper { color: var(--ynklv-copper); }
+  .text-ynklv-muted { color: rgba(245, 240, 232, 0.45); }
+  .border-ynklv { border-color: var(--ynklv-border); }
+  .border-copper { border-color: var(--ynklv-copper); }
+}

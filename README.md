@@ -65,6 +65,78 @@ YNKLV exists to give creators, builders, and communities across Africa and the A
 | [contracts/script/Deploy.s.sol](contracts/script/Deploy.s.sol) | Deployment script |
 | [contracts/foundry.toml](contracts/foundry.toml) | Foundry configuration |
 
+### Phase 3 — Civilization-Grade Hardening
+
+| Document | Description |
+|---|---|
+| [docs/30-founder-protection.md](docs/30-founder-protection.md) | Depersonalization, Zamani Foundation, progressive decentralization |
+| [docs/31-legal-regulatory-resilience.md](docs/31-legal-regulatory-resilience.md) | MiCA alignment, utility positioning, responsible language guide |
+| [docs/32-treasury-security.md](docs/32-treasury-security.md) | Baraka tiered architecture, multisig, attack surface enumeration |
+| [docs/33-economic-resilience.md](docs/33-economic-resilience.md) | Sustainable value model, explicit rejection of Ponzi/APY mechanics |
+| [docs/34-digital-civilization-layer.md](docs/34-digital-civilization-layer.md) | Identity, reputation, citizenship, sovereignty mechanisms |
+| [docs/35-ai-native-infrastructure.md](docs/35-ai-native-infrastructure.md) | Nommo design — "Nommo proposes, humans decide" |
+| [docs/36-product-perfection.md](docs/36-product-perfection.md) | Product philosophy, per-surface standards, performance budgets |
+| [brand/CULTURAL-LEGACY.md](brand/CULTURAL-LEGACY.md) | Symbolic system, rituals, phrase canon |
+| [strategy/GLOBAL-EXPANSION.md](strategy/GLOBAL-EXPANSION.md) | Africa-first city sequencing, phased rollout |
+
+### Phase 4 — Naming Architecture
+
+| Document | Description |
+|---|---|
+| [brand/NAMING-ARCHITECTURE.md](brand/NAMING-ARCHITECTURE.md) | Complete naming system — Zamani, Mboka, Indaba, Baraka, Nommo, Soko, Sankofa, Askari |
+
+### Phase 5 — Production Monorepo
+
+#### Apps
+
+| App | Description |
+|---|---|
+| `apps/web` | Cinematic landing page (Next.js 14, Framer Motion, luxury UX) |
+| `apps/dashboard` | Member + admin dashboard (user overview, rewards, access grid, treasury, role audit) |
+
+#### Packages
+
+| Package | Description |
+|---|---|
+| `packages/contracts` | Solidity 0.8.24 — Token, MembershipRegistry, EcosystemRewardsVault, CreatorRewardsDistributor |
+| `packages/sdk` | `@ynklv/sdk` — YnklvClient, React hooks, server enforcement |
+| `packages/types` | Shared TypeScript types (MembershipTier, ApiResult, CheckoutIntent, …) |
+| `packages/config` | Chain config, tier ladder, TOKEN_CONSTANTS, COMPLIANCE |
+| `packages/token-gates` | Pure gate evaluation — `evaluateGate`, `Gates.*` helpers |
+| `packages/payments` | Payment provider adapters (fiat on-ramp/off-ramp, stablecoin) |
+| `packages/analytics` | Privacy-respecting ecosystem analytics (DNT-aware, no PII) |
+| `packages/api-client` | Typed fetch client for all 12 API endpoints |
+| `packages/ui` | Shared UI primitives |
+| `packages/utils` | Shared utilities |
+| `packages/abi` | Contract ABI exports |
+
+#### Services
+
+| Service | Description |
+|---|---|
+| `services/api` | Hono REST API — 12 endpoints, rate limiting, zod validation, MemoryStore seed |
+| `services/indexer` | viem event watcher — Transfer, Allocated/Claimed, ContributionUpdated, Purchase |
+| `services/worker` | Background job scheduler — epoch settlement, treasury snapshot, contribution rollup |
+
+#### Examples
+
+| Example | Description |
+|---|---|
+| `examples/nextjs-integration` | Minimal Next.js gate + wallet connect |
+| `examples/creator-platform` | Purchase flow with 90/8.5/1.5 split |
+| `examples/marketplace` | Server-side access gate with `requireAccess` |
+| `examples/ai-saas` | Nommo AI feature gate (Architect tier) |
+| `examples/membership-app` | Progressive tier-gate UI component |
+
+#### CI/CD
+
+| File | Description |
+|---|---|
+| `.github/workflows/ci.yml` | 5 jobs: node, contracts, slither, audit, compliance |
+| `scripts/compliance-scan.sh` | Negation-aware prohibited-language guard |
+| `scripts/setup.mjs` | One-time bootstrap — toolchain check, .env, forge install |
+| `packages/contracts/slither.config.json` | Slither static analysis config |
+
 ### Frontend Scaffold (Next.js 14)
 
 | File | Description |
@@ -76,6 +148,21 @@ YNKLV exists to give creators, builders, and communities across Africa and the A
 | [apps/web/src/lib/contracts.ts](apps/web/src/lib/contracts.ts) | ABIs + addresses per chain |
 | [apps/web/src/hooks/useYNKLV.ts](apps/web/src/hooks/useYNKLV.ts) | Token balance, Pass state, EPS hooks |
 | [apps/web/src/styles/globals.css](apps/web/src/styles/globals.css) | Complete YNKLV design token system |
+
+---
+
+## Quickstart
+
+```bash
+git clone https://github.com/peupleaelionor/ynklv-token-.git
+cd ynklv-token-
+pnpm install
+cp .env.example .env
+pnpm setup          # toolchain check + forge install
+pnpm dev            # all apps in dev mode
+```
+
+**Ports:** `web` → 3000 · `dashboard` → 3002 · `api` → 3001
 
 ---
 
