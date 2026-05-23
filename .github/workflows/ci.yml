@@ -1,0 +1,97 @@
+name: CI
+
+on:
+  push:
+    branches: [main, 'claude/**']
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ── JS/TS: lint, typecheck, test, build ──
+  node:
+    name: Node — lint / typecheck / test / build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lint
+      - run: pnpm typecheck
+      - run: pnpm test
+      - run: pnpm build
+
+  # ── Solidity: Foundry tests + gas ──
+  contracts:
+    name: Contracts — forge test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - uses: foundry-rs/foundry-toolchain@v1
+      - name: Install contract deps
+        working-directory: packages/contracts
+        run: forge install OpenZeppelin/openzeppelin-contracts foundry-rs/forge-std --no-commit
+      - name: Build
+        working-directory: packages/contracts
+        run: forge build --sizes
+      - name: Test
+        working-directory: packages/contracts
+        run: forge test -vvv
+      - name: Gas report
+        working-directory: packages/contracts
+        run: forge test --gas-report
+
+  # ── Static analysis: Slither ──
+  slither:
+    name: Security — Slither
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: foundry-rs/foundry-toolchain@v1
+      - name: Install contract deps
+        working-directory: packages/contracts
+        run: forge install OpenZeppelin/openzeppelin-contracts foundry-rs/forge-std --no-commit
+      - uses: crytic/slither-action@v0.4.0
+        with:
+          target: packages/contracts
+          slither-config: packages/contracts/slither.config.json
+          fail-on: high
+
+  # ── Dependency vulnerability scan ──
+  audit:
+    name: Security — dependency audit
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Audit (high+ severity)
+        run: pnpm audit --audit-level high
+
+  # ── Compliance language guard ──
+  compliance:
+    name: Compliance — prohibited language guard
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scan for investment/yield language in product surfaces
+        run: bash scripts/compliance-scan.sh
