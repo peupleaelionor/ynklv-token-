@@ -1,6 +1,6 @@
 const CONTRACTS = [
   {
-    name: 'YANKELV Token',
+    name: 'YNKLV Token',
     symbol: 'ERC20Burnable',
     address: '0x0000000000000000000000000000000000000001',
     roles: ['MINTER_ROLE', 'PAUSER_ROLE'],

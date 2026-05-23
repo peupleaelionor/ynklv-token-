@@ -8,7 +8,7 @@ import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.s
 import { IYNKLV } from "./interfaces/IYNKLV.sol";
 
 /// @title EcosystemRewardsVault
-/// @author YANKELV
+/// @author YNKLV
 /// @notice Distributes pre-funded YNKLV to recognize contribution and
 ///         participation. This is NOT yield, NOT interest, and NOT a return on
 ///         investment. It cannot mint. It can only allocate tokens that have

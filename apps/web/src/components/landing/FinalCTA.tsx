@@ -8,7 +8,7 @@ import { YNKLVWordmark } from '@/components/ui/Typography'
 const joinPaths = [
   {
     icon:  '✦',
-    label: 'Hold 100 YANKELV',
+    label: 'Hold 100 YNKLV',
     desc:  'Qualify to mint your Pass and enter the ecosystem.',
   },
   {
@@ -206,7 +206,7 @@ export function SiteFooter() {
             <div className="flex items-center gap-2.5 mb-5">
               <HexGlyph size={24} stroke="#C8A45A" />
               <span className="font-display text-[var(--or)] tracking-[0.22em] text-[13px] uppercase">
-                YANKELV
+                YNKLV
               </span>
             </div>
             <p className="t-prose text-[var(--blanc-35)] text-xs leading-relaxed">
@@ -241,7 +241,7 @@ export function SiteFooter() {
         <div className="border-t border-[rgba(200,164,90,0.07)] pt-8 flex flex-col sm:flex-row
                         items-center justify-between gap-4">
           <p className="t-label text-[var(--blanc-25)] text-[9px] tracking-[0.2em]">
-            © 2026 YANKELV FOUNDATION — ALL RIGHTS RESERVED
+            © 2026 YNKLV FOUNDATION — ALL RIGHTS RESERVED
           </p>
           <p className="t-label text-[var(--blanc-25)] text-[9px] tracking-[0.15em]">
             TOBONGISA MBOKA — BUILD THE CIVILIZATION

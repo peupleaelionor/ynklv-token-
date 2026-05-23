@@ -70,14 +70,14 @@ export function Navigation() {
           <Link
             href="/"
             className="flex items-center gap-2.5 group"
-            aria-label="YANKELV — Home"
+            aria-label="YNKLV — Home"
           >
             <HexGlyph size={28} stroke="#C8A45A" variant="outline" />
             <span
               className="font-display text-[15px] tracking-[0.22em] text-[var(--or)] uppercase"
               style={{ fontVariantNumeric: 'tabular-nums' }}
             >
-              YANKELV
+              YNKLV
             </span>
           </Link>
 

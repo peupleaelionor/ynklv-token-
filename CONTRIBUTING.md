@@ -1,6 +1,6 @@
-# Contributing to YANKELV
+# Contributing to YNKLV
 
-YANKELV is built to last. Contributions are welcome from anyone who shares the standard:
+YNKLV is built to last. Contributions are welcome from anyone who shares the standard:
 utility before speculation, elegance before hype, transparency as architecture.
 
 ## Prerequisites

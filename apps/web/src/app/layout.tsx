@@ -13,32 +13,32 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s — YANKELV',
-    default:  'YANKELV — Build the Civilization',
+    template: '%s — YNKLV',
+    default:  'YNKLV — Build the Civilization',
   },
   description:
-    'YANKELV is the financial and cultural infrastructure for Afro-global creators, builders, and communities. Not a coin. A civilization.',
-  keywords:   ['YANKELV', 'Afro-futurist', 'creator economy', 'Web3', 'Africa', 'digital identity'],
-  authors:    [{ name: 'YANKELV Foundation' }],
-  creator:    'YANKELV Foundation',
+    'YNKLV is the financial and cultural infrastructure for Afro-global creators, builders, and communities. Not a coin. A civilization.',
+  keywords:   ['YNKLV', 'Afro-futurist', 'creator economy', 'Web3', 'Africa', 'digital identity'],
+  authors:    [{ name: 'YNKLV Foundation' }],
+  creator:    'YNKLV Foundation',
   metadataBase: new URL('https://ynklv.xyz'),
   openGraph: {
     type:        'website',
     locale:      'en_US',
     url:         'https://ynklv.xyz',
-    siteName:    'YANKELV',
-    title:       'YANKELV — Build the Civilization',
+    siteName:    'YNKLV',
+    title:       'YNKLV — Build the Civilization',
     description: 'The Afro-global digital asset ecosystem.',
     images: [{
       url:    '/og.png',
       width:  1200,
       height: 630,
-      alt:    'YANKELV — Build the Civilization',
+      alt:    'YNKLV — Build the Civilization',
     }],
   },
   twitter: {
     card:        'summary_large_image',
-    title:       'YANKELV — Build the Civilization',
+    title:       'YNKLV — Build the Civilization',
     description: 'The Afro-global digital asset ecosystem.',
     images:      ['/og.png'],
     creator:     '@ynklv',

@@ -32,7 +32,7 @@ async function tick() {
 }
 
 async function main() {
-  console.log(JSON.stringify({ ts: new Date().toISOString(), msg: 'YANKELV Worker starting', jobs: jobs.map((j) => j.name) }))
+  console.log(JSON.stringify({ ts: new Date().toISOString(), msg: 'YNKLV Worker starting', jobs: jobs.map((j) => j.name) }))
 
   // Run all jobs immediately on boot, then on schedule.
   await tick()

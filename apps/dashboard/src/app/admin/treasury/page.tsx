@@ -13,10 +13,10 @@ export default function TreasuryPage() {
       </div>
 
       <div className="grid grid-cols-4 gap-4">
-        <StatCard label="Total value" value={`${formatWei(t.totalValue, 18, 0)} YANKELV`} copper accent />
-        <StatCard label="Operational reserve" value={`${t.allocation.operationalReservePercent}%`} sub={formatWei(t.operationalReserve, 18, 0) + ' YANKELV'} />
-        <StatCard label="Ecosystem fund" value={`${t.allocation.ecosystemFundPercent}%`} sub={formatWei(t.ecosystemFund, 18, 0) + ' YANKELV'} />
-        <StatCard label="Emergency fund" value={`${t.allocation.emergencyFundPercent}%`} sub={formatWei(t.emergencyFund, 18, 0) + ' YANKELV'} />
+        <StatCard label="Total value" value={`${formatWei(t.totalValue, 18, 0)} YNKLV`} copper accent />
+        <StatCard label="Operational reserve" value={`${t.allocation.operationalReservePercent}%`} sub={formatWei(t.operationalReserve, 18, 0) + ' YNKLV'} />
+        <StatCard label="Ecosystem fund" value={`${t.allocation.ecosystemFundPercent}%`} sub={formatWei(t.ecosystemFund, 18, 0) + ' YNKLV'} />
+        <StatCard label="Emergency fund" value={`${t.allocation.emergencyFundPercent}%`} sub={formatWei(t.emergencyFund, 18, 0) + ' YNKLV'} />
       </div>
 
       <div className="bg-ynklv-surface border border-ynklv rounded-xl p-5 space-y-4">
@@ -48,7 +48,7 @@ export default function TreasuryPage() {
           </div>
           <div>
             <p className="text-sm text-ynklv-cream">Deflationary burn</p>
-            <p className="text-2xl font-light text-ynklv-copper">{formatWei(t.recentBurnTotal)} YANKELV</p>
+            <p className="text-2xl font-light text-ynklv-copper">{formatWei(t.recentBurnTotal)} YNKLV</p>
             <p className="text-xs text-ynklv-muted">1.5% of all creator transaction volume</p>
           </div>
         </div>

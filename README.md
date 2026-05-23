@@ -1,12 +1,12 @@
-# YANKELV — The Afro-Global Digital Asset Ecosystem
+# YNKLV — The Afro-Global Digital Asset Ecosystem
 
-> *"Not a coin. A civilization. YANKELVCOIN."*
+> *"Not a coin. A civilization."*
 
 ---
 
 ## What is YNKLV?
 
-YANKELV (YANKELVCOIN) is a premium utility token and cultural ecosystem built at the intersection of African creativity, global digital infrastructure, and AI-native commerce. It is not a speculation vehicle. It is not a meme. It is a long-term digital institution — designed to last decades.
+YNKLV is a premium utility token and cultural ecosystem built at the intersection of African creativity, global digital infrastructure, and AI-native commerce. It is not a speculation vehicle. It is not a meme. It is a long-term digital institution — designed to last decades.
 
 YNKLV exists to give creators, builders, and communities across Africa and the African diaspora genuine ownership of the digital economy they are already building.
 

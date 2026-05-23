@@ -21,7 +21,7 @@ async function main() {
   console.log(
     JSON.stringify({
       ts: new Date().toISOString(),
-      msg: 'YANKELV Indexer starting',
+      msg: 'YNKLV Indexer starting',
       chainId: CHAIN_ID,
       mock: IS_MOCK,
     }),

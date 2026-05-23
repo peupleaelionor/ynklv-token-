@@ -11,11 +11,11 @@ export function RewardsPanel() {
       <div className="grid grid-cols-2 gap-4">
         <div className="bg-ynklv-surface border border-ynklv rounded-xl p-5">
           <p className="text-xs uppercase tracking-widest text-ynklv-muted mb-1">Claimed</p>
-          <p className="text-2xl font-light text-ynklv-cream">{formatWei(rewards.claimedTotal)} YANKELV</p>
+          <p className="text-2xl font-light text-ynklv-cream">{formatWei(rewards.claimedTotal)} YNKLV</p>
         </div>
         <div className="bg-[#1A1209] border border-copper rounded-xl p-5">
           <p className="text-xs uppercase tracking-widest text-ynklv-muted mb-1">Pending</p>
-          <p className="text-2xl font-light text-ynklv-copper">{formatWei(rewards.pendingTotal)} YANKELV</p>
+          <p className="text-2xl font-light text-ynklv-copper">{formatWei(rewards.pendingTotal)} YNKLV</p>
           <button className="mt-3 text-xs border border-copper text-ynklv-copper rounded-lg px-3 py-1.5 hover:bg-copper/10 transition-colors">
             Claim rewards
           </button>

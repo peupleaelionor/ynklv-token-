@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'YANKELV Dashboard',
+  title: 'YNKLV Dashboard',
   description: 'Zamani ecosystem dashboard — access, participation, and coordination.',
 }
 
