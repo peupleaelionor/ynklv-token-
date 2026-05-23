@@ -7,7 +7,7 @@ export const tokenRoutes = new Hono()
 tokenRoutes.get('/metadata', (c) => {
   return c.json({
     data: {
-      name: 'YLVcoin',
+      name: 'KLVCOIN',
       symbol: 'YNKLV',
       decimals: 18,
       totalSupply: '1000000000000000000000000000',

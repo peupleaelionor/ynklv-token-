@@ -6,7 +6,7 @@ import { ERC20Burnable } from "@openzeppelin/contracts/token/ERC20/extensions/ER
 
 /// @notice Test-only fixed-supply burnable token mirroring YNKLV's surface.
 contract MockYNKLV is ERC20, ERC20Burnable {
-    constructor(uint256 supply) ERC20("YLVcoin", "YNKLV") {
+    constructor(uint256 supply) ERC20("KLVCOIN", "YNKLV") {
         _mint(msg.sender, supply);
     }
 }
